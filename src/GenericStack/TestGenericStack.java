@@ -4,17 +4,23 @@ public class TestGenericStack {
 
     public static void main(String[] args) {
 
-        GenericStack<String> stack = new GenericStack<String>();
+        GenericStack<Object> stack = new GenericStack<Object>();
         GenericStack<Integer> IStack = new GenericStack<Integer>();
 
         System.out.println(stack.isEmpty());
-        stack.push("Hello");
+        stack.push("One");
+        stack.push(2);
+        stack.push("Three");
+        stack.push("fire");
         System.out.println(stack.isEmpty());
         System.out.println(stack.getSize());
-        stack.pop();
-        System.out.println(stack.isEmpty());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.getSize());
+        System.out.println(stack.isEmpty());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
 
     }
 }

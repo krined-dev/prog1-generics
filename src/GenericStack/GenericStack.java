@@ -28,7 +28,7 @@ public class GenericStack<E> {
 
     public E pop() {
         if (top > 0) {
-        E pop = elements[top--];
+        E pop = elements[--top];
         return pop;}
         else {
             System.out.println("Stack underflow");
